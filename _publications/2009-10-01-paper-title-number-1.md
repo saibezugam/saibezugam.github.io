@@ -1,15 +1,11 @@
 ---
-title: "Paper Title Number 1"
+title: "Exploiting analogue OxRAM conductance modulation for contrast enhancement application"
 collection: publications
 permalink: /publication/2009-10-01-paper-title-number-1
-excerpt: 'This paper is about the number 1. The number 2 is left for future work.'
-date: 2009-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper1.pdf'
-citation: 'Your Name, You. (2009). &quot;Paper Title Number 1.&quot; <i>Journal 1</i>. 1(1).'
+excerpt: 'The authors present a unique application of analogue oxide-based resistive memory (OxRAM) device for sensor-level information storage and computation. They show that quality of low-contrast images in low-light can be improved by carefully exploiting OxRAM conductance modulation from specific bi-layer OxRAM material stacks. The proposed methodology involves conversion of light intensity to pulse frequency followed by resistance encoding as different non-volatile OxRAM resistance states.'
+date: 2020-06-01
+venue: 'IET Electronics Letters '
+paperurl: 'https://ietresearch.onlinelibrary.wiley.com/doi/pdf/10.1049/el.2020.0106'
+citation: 'Kumar, A., Bezugam, S.S., Hudec, B., Hou, T.-H. and Suri, M. (2020), Exploiting analogue OxRAM conductance modulation for contrast enhancement application. Electron. Lett., 56: 594-597. https://doi.org/10.1049/el.2020.0106
+'
 ---
-This paper is about the number 1. The number 2 is left for future work.
-
-[Download paper here](http://academicpages.github.io/files/paper1.pdf)
-
-Recommended citation: Your Name, You. (2009). "Paper Title Number 1." <i>Journal 1</i>. 1(1).
