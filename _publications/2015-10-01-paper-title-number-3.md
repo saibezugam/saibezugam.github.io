@@ -1,15 +1,10 @@
 ---
-title: "Paper Title Number 3"
+title: "Multi-Class Classification of Blood Cells -- End to End Computer Vision based diagnosis case study"
 collection: publications
 permalink: /publication/2015-10-01-paper-title-number-3
-excerpt: 'This paper is about the number 3. The number 4 is left for future work.'
-date: 2015-10-01
-venue: 'Journal 1'
-paperurl: 'http://academicpages.github.io/files/paper3.pdf'
-citation: 'Your Name, You. (2015). &quot;Paper Title Number 3.&quot; <i>Journal 1</i>. 1(3).'
+excerpt: 'The diagnosis of blood-based diseases often involves identifying and characterizing patient blood samples. Automated methods to detect and classify blood cell subtypes have important medical applications. Automated medical image processing and analysis offers a powerful tool for medical diagnosis. In this work we tackle the problem of white blood cell classification based on the morphological characteristics of their outer contour, color. The work we would explore a set of preprocessing and segmentation (Color-based segmentation, Morphological processing, contouring) algorithms along with a set of features extraction methods (Corner detection algorithms and Histogram of Gradients(HOG)), dimensionality reduction algorithms (Principal Component Analysis(PCA)) that are able to recognize and classify through various Unsupervised(k-nearest neighbors) and Supervised (Support Vector Machine, Decision Trees, Linear Discriminant Analysis, Quadratic Discriminant Analysis, Naive Bayes) algorithms different categories of white blood cells to Eosinophil, Lymphocyte, Monocyte, and Neutrophil. We even take a step forwards to explore various Deep Convolutional Neural network architecture (Sqeezent, MobilenetV1,MobilenetV2, InceptionNet etc.) without preprocessing/segmentation and with preprocessing. We would like to explore many algorithms to identify the robust algorithm with least time complexity and low resource requirement. The outcome of this work can be a cue to selection of algorithms as per requirement for automated blood cell classification.'
+date: 2021-02-01
+venue: 'Arxiv'
+paperurl: 'https://arxiv.org/abs/2106.12548'
+citation: 'Bezugam, S.S., 2021. Multi-Class Classification of Blood Cells--End to End Computer Vision based diagnosis case study. arXiv preprint arXiv:2106.12548.'
 ---
-This paper is about the number 3. The number 4 is left for future work.
-
-[Download paper here](http://academicpages.github.io/files/paper3.pdf)
-
-Recommended citation: Your Name, You. (2015). "Paper Title Number 3." <i>Journal 1</i>. 1(3).
