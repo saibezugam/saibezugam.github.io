@@ -13,7 +13,6 @@ Education
 ======
 * B.Tech. in Electronics and Communication Engineering, Keshav Memorial Institute of Technology, 2018
 * M.S.(R) in Neuromorphic Engineering, Electrical Engineering Department, Indian Institute of Technology Delhi, 2019-present
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
 
 Work experience
 ======
