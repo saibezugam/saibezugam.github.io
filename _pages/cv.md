@@ -11,8 +11,8 @@ redirect_from:
 
 Education
 ======
-* B.Tech. in Electronics and Communication Engineering, Keshav Memorial Institute of Technology, 2018
-* M.S.(R) in Neuromorphic Engineering, Electrical Engineering Department, Indian Institute of Technology Delhi, 2019-present
+* Master of Science (Research) in Neuromorphic Engineering, Electrical Engineering Department, Indian Institute of Technology Delhi (IITD), 2019-present
+* Bachelor of Technology in Electronics and Communication Engineering, Jawaharlal Nehru Technological University Hyderabad (JNTUH), 2018
 
 Work experience
 ======
@@ -20,6 +20,10 @@ Work experience
   * Indian Institute of Technology Delhi
   * Research: Neuromorphic Applications
   * Supervisor: Professor Manan Suri
+  
+* Spring 2020, Fall 2021: Graduate Teaching Assistant
+  * Indian Institute of Technology Delhi
+  * Course: Digital Electronics (ELL 201)
   
 Publications
 ======
