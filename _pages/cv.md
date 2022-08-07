@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Master of Science (Research) in Neuromorphic Engineering, Electrical Engineering Department, Indian Institute of Technology Delhi (IITD), 2019-present
+* Master of Science (Research) in Neuromorphic Engineering, Electrical Engineering Department, Indian Institute of Technology Delhi (IITD), 2019-2022
 * Bachelor of Technology in Electronics and Communication Engineering, Jawaharlal Nehru Technological University Hyderabad (JNTUH), 2018
 
 Work experience
