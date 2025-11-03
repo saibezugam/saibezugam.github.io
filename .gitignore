@@ -1,3 +1,13 @@
 _site/
 
+# PDF files
 Bezugam_Sai_Sukruth_Full_CV_with_news-1.pdf
+
+# Node
+node_modules/
+package-lock.json
+
+# OS/Editor
+.DS_Store
+.vscode/
+.idea/
