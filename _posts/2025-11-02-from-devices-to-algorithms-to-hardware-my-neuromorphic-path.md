@@ -7,33 +7,31 @@ tags: [neuromorphic, RRAM, SNN, Loihi, SPICE]
 description: "Device-level realities shaping algorithms and verified in hardware."
 ---
 
-My work sits at the seam between devices, algorithms, and hardware. I try to keep the stack honest: start from what the device actually does, shape the learning around it, and check the claim on something you can probe.
+When I think about my work, the pattern is simple: **start from the device, make the algorithm honest, and prove it in hardware**. That’s the thread that runs from my master’s at IIT Delhi with **Prof. Manan Suri** through my Ph.D. at UC Santa Barbara in the **Strukov Research Group** with **Prof. Dmitri Strukov**.
 
-I trained in two places that reward this habit—an M.S. at IIT Delhi with **Prof. Manan Suri** and a Ph.D. at UC Santa Barbara in the **Strukov Research Group** with **Prof. Dmitri Strukov**.
+I began on the Python side—writing SNN/CNN training code and, out of curiosity, injecting the messy parts of real non-volatile memories into the loop: quantization, drift, IR-drop, device-to-device variability. The more I modeled non-idealities, the more obvious it became that algorithms could be **better** if they were designed around the physics instead of ignoring it. That thinking led to adaptive neuron models for recurrent spiking networks (see the DEXAT work in *Nature Communications* 2021: <https://www.nature.com/articles/s41467-021-24427-8>) and a practical pipeline on **Intel Loihi** for EMG gesture recognition (arXiv 2022: <https://arxiv.org/abs/2206.02061>).
 
-## What I actually did
+Around the same time, I explored **near-sensor computing**—using the characteristics of RRAM devices to do a simple contrast-enhancement step close to the sensor for low-light images—and I played with event-based vision, proposing **H2RP**, a lightweight region-proposal idea for event cameras where the background is static (*ICONS 2021*: <https://dl.acm.org/doi/10.1145/3477145.3477263>). None of these were “big fancy models,” but they were fast, transparent, and useful.
 
-I began on the software side and pulled hardware effects into the loop: quantization, drift, IR-drop, and device-to-device spread. Designing under those constraints led to adaptive neuron models for recurrent SNNs (DEXAT, *Nature Communications* 2021: <https://www.nature.com/articles/s41467-021-24427-8>) and a practical **Intel Loihi** pipeline for EMG gesture recognition (arXiv 2022: <https://arxiv.org/abs/2206.02061>).
+At UCSB, I felt I needed to tighten the bottom of the stack—**SPICE-level** understanding—not just empirical fitting. So I built **SpiceXpanse**, an automation framework that orchestrates parameter exploration, parallel HSPICE runs, and composite losses to make RRAM calibration reproducible and scalable (code/paper link forthcoming on my site). That tooling mindset—**make it repeatable, then make it better**—has been crucial.
 
-At the edge, I looked at **near-sensor computing** with RRAM for low-light contrast enhancement and worked on event-based vision. I proposed **H2RP**, a lightweight region-proposal method when the background is static (*ICONS 2021*: <https://dl.acm.org/doi/10.1145/3477145.3477263>). Small models, direct paths from sensor to decision.
+On the hardware side, I mapped **qCLIF neurons** into a digital flow—**RTL to layout** in 45 nm—so I could see the implications of neuron design on area/timing and run system-level sims with realistic constraints (arXiv 2024: <https://arxiv.org/abs/2404.18066>). It’s not a tape-out (yet), but it closed the loop between model and implementation, which is the point.
 
-Tooling matters, so I turned a pile of scripts into **SpiceXpanse**—automation for reproducible RRAM calibration: define sweeps, launch parallel HSPICE runs, use composite losses, and keep the whole configuration in the log (code/paper forthcoming). Calibration here means distributions, seeds, and corners, not a single number.
+Variability is the elephant in the room for memristive devices, so we explored **shadow-memory** compensation: a straightforward way to **reduce programming steps and tighten device distributions** (IMW 2025: <https://tugraz.elsevierpure.com/en/publications/controlling-rerams-switching-characteristics-with-shadow-memory-f>). I implemented and evaluated it in circuit and learning experiments—again, simple idea, measurable gains.
 
-On the hardware side, I pushed **qCLIF neurons** through a digital flow—**RTL → layout** in 45 nm—to see area/timing/energy truth rather than estimates (arXiv 2024: <https://arxiv.org/abs/2404.18066>). With placed-and-routed results, system-level sims carry constraints you can't hand-wave.
+Along the way I co-authored a **wafer-scale passive crossbar** study—my slice was device characterization and SPICE/NN simulations as part of a large multi-group effort (*Nature Communications* 2025: <https://www.nature.com/articles/s41467-025-63831-2>). And on the algorithmic side, we examined **neoHebbian** synapses with two state variables—conductance plus a thermal/eligibility component—evaluated on RSNN/RL tasks with non-idealities (arXiv 2024: <https://arxiv.org/abs/2411.18272>).
 
-Variability sets the ceiling for memristive systems, so we evaluated **shadow-memory** compensation—pairing cells and scheduling pulses to narrow effective distributions—and measured its impact in circuits and learning loops (IMW 2025: <https://tugraz.elsevierpure.com/en/publications/controlling-rerams-switching-characteristics-with-shadow-memory-f>). The goal was operational: fewer programming steps and tighter spreads.
+If there’s a philosophy behind all this, it’s three rules:
 
-I also contributed device characterization and SPICE/NN simulations to a **wafer-scale passive crossbar** effort across multiple groups (*Nature Communications* 2025: <https://www.nature.com/articles/s41467-025-63831-2>), and examined **neoHebbian** synapses with two state variables—conductance plus a thermal/eligibility term—on RSNN/RL tasks under non-idealities (arXiv 2024: <https://arxiv.org/abs/2411.18272>).
+1) **Start from reality.** Model the device honestly—warts and all.  
+2) **Adapt the algorithm.** Don’t force abstraction on the physics; nudge the learning to fit the substrate.  
+3) **Prove it in hardware.** Loihi, FPGA, or RTL/layout—something you can poke and measure.
 
-## Where this is going
+Today I’m extending characterization beyond RRAM (including **eFlash**) and pushing toward reusable, **device-aware spiking IP** that can sit comfortably in a modern SoC. I’m also packaging the tools so others can reproduce and build on top—because good science that nobody can rerun isn’t very useful.
 
-In practice I keep three things straight: model devices as they are; design algorithms that don't fight the substrate; validate on hardware you can poke—Loihi, FPGA, or plain RTL/layout.
-
-Next steps: extend characterization beyond RRAM (including **eFlash**), and package **device-aware spiking IP** that drops cleanly into a modern SoC. The parallel track is tooling—make reruns trivial so results are boring to reproduce and easy to build on.
-
-If you work at this device → algorithm → hardware intersection, happy to compare notes.
+If this intersection—**device → algorithm → hardware**—is where you live too, I’d love to compare notes.
 
 — **Sai**
 
-Advisors: **Prof. Dmitri Strukov** (UCSB) · **Prof. Manan Suri** (IIT Delhi)
+Advisors: **Prof. Dmitri Strukov** (UCSB) · **Prof. Manan Suri** (IIT Delhi)  
 Scholar: <https://scholar.google.com/citations?user=FTYIH9wAAAAJ> · GitHub: <https://github.com/saibez> · LinkedIn: <https://www.linkedin.com/in/saisukruth-bezugam>
