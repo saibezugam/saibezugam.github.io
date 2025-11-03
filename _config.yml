@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "Sai Sukruth Bezugam"
 title_separator          : "-"
 name                     : &name "Sai Sukruth Bezugam"
-description              : &description "Master's Reseach Scholar at Indian Institute of Technology Delhi"
+description              : &description "Ph.D. Student in Neuromorphic Computing at UC Santa Barbara"
 url                      : https://saibezugam.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "saibezugam.github.io"
@@ -82,8 +82,8 @@ analytics:
 author:
   name             : "Sai Sukruth Bezugam"
   avatar           : "profile.png"
-  bio              : "Master's Reseach scholar at Indian Institute of Technology Delhi"
-  location         : "Hyderabad, India"
+  bio              : "Ph.D. Student in Neuromorphic Computing at UC Santa Barbara"
+  location         : "Santa Barbara, CA"
   employer         :
   pubmed           : #""
   googlescholar    : "https://scholar.google.com/citations?user=FTYIH9wAAAAJ&hl=en"
@@ -102,7 +102,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "saisukruth-bezugam"
   orcid            : "https://orcid.org/0000-0003-0750-6568"
   pinterest        :
   soundcloud       :
