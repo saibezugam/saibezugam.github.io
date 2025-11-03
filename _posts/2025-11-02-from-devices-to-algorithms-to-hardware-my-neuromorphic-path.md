@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: single
 title: "From Devices to Algorithms to Hardware: My Neuromorphic Path"
 date: 2025-11-02
 categories: research
