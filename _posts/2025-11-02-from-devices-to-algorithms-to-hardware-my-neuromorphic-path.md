@@ -19,7 +19,7 @@ On the hardware side, I mapped **qCLIF neurons** into a digital flow—**RTL to 
 
 Variability is the elephant in the room for memristive devices, so we explored **shadow-memory** compensation: a straightforward way to **reduce programming steps and tighten device distributions** (IMW 2025: <https://tugraz.elsevierpure.com/en/publications/controlling-rerams-switching-characteristics-with-shadow-memory-f>). I implemented and evaluated it in circuit and learning experiments—again, simple idea, measurable gains.
 
-Along the way I co-authored a **wafer-scale passive crossbar** study—my slice was device characterization and SPICE/NN simulations as part of a large multi-group effort (*Nature Communications* 2025: <https://www.nature.com/articles/s41467-025-63831-2>). And on the algorithmic side, we examined **neoHebbian** synapses with two state variables—conductance plus a thermal/eligibility component—evaluated on RSNN/RL tasks with non-idealities (arXiv 2024: <https://arxiv.org/abs/2411.18272>).
+Along the way I co-authored a **wafer-scale passive crossbar** study—my slice was helping a bit in device characterization and SPICE/NN simulations (*Nature Communications* 2025: <https://www.nature.com/articles/s41467-025-63831-2>). And on the algorithmic side, we examined **neoHebbian** synapses with two state variables—conductance plus a thermal/eligibility component—evaluated on RSNN/RL tasks with non-idealities (arXiv 2024: <https://arxiv.org/abs/2411.18272>).
 
 If there’s a philosophy behind all this, it’s three rules:
 
@@ -27,9 +27,7 @@ If there’s a philosophy behind all this, it’s three rules:
 2) **Adapt the algorithm.** Don’t force abstraction on the physics; nudge the learning to fit the substrate.  
 3) **Prove it in hardware.** Loihi, FPGA, or RTL/layout—something you can poke and measure.
 
-Today I’m extending characterization beyond RRAM (including **eFlash**) and pushing toward reusable, **device-aware spiking IP** that can sit comfortably in a modern SoC. I’m also packaging the tools so others can reproduce and build on top—because good science that nobody can rerun isn’t very useful.
-
-If this intersection—**device → algorithm → hardware**—is where you live too, I’d love to compare notes.
+Today I’m extending characterization beyond RRAM (including **eFlash**) and pushing toward reusable, **device-aware spiking IP** that can sit comfortably in a modern SoC. I’m also packaging the tools so others can reproduce and build on top.
 
 — **Sai**
 
