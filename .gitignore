@@ -1,2 +1,11 @@
 _site/
 
+# Node
+node_modules/
+package-lock.json
+
+# OS/Editor
+.DS_Store
+.vscode/
+.idea/
+
