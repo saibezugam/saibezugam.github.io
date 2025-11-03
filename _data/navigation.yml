@@ -2,10 +2,13 @@
 main:
   - title: "Publications"
     url: /publications/
-    
+
+  - title: "My Research Journey"
+    url: /research/from-devices-to-algorithms-to-hardware-my-neuromorphic-path/
+
   #- title: "Portfolio"
   #  url: /portfolio/
-    
+
   - title: "CV"
     url: /cv/
     
